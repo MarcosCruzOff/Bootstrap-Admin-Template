@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bootstrap-Admin - Cards</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Start Page Wrapper-->
+  <div id="wrapper">
+
+    <!--Side Bar Start-->
+    <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!--Sidebar Brand-->
+      <a class="sidebar-brand d-flex aling-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon rotate-n-15">
+              <i class=" fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">Bootstrap
+            <sup>2</sup>
+          </div>
+      </a>
+
+      <!--Section Divider-->
+      <hr class="sidebar-divider my-0">
+      
+      <!--Nav item DashBoard-->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class=" fas fa-fw fa-tachometer-alt"></i>
+          <span>Painel de Controle</span>
+        </a>
+
+        <!--Section Divider-->
+        <hr class="sidebar-divider my-0">
+      </li>
+
+      <!--Section Heading-->
+      <div class="sidebar-heading">
+        INTERFACE
+      </div>
+
+      <!--Nav item - Componente Collapse Menu-->
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#"
+        data-toggle="collapse"
+        data-target="#collapseTwo"
+        aria-expanded="true"
+        aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Componentes</span>
+        </a>
+        <div id="collapseTwo" 
+        class="collapse" 
+        aria-labelledby="headingTwo"
+        data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Modifique Componentes:</h6>
+            <a class="collapse-item" href="buttons.html">Botões</a>
+            <a class="collapse-item" href="cards.html">Cartões</a>
+          </div>
+        </div>
+      </li>
+
+      <!--Nav item - Serviços Collapse Menu-->
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#"
+        data-toggle="collapse"
+        data-target="#collapseUtilities"
+        aria-expanded="true"
+        aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>Serviços</span>
+        </a>
+        <div id="collapseUtilities" 
+        class="collapse" 
+        aria-labelledby="headingUtilities"
+        data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="utilities-color.html">Cores</a>
+            <a class="collapse-item" href="utilities-border.html">Bordas</a>
+            <a class="collapse-item" href="utilities-animation.html">Animações</a>
+            <a class="collapse-item" href="utilities-other.html">Outros</a>
+          </div>
+        </div>
+      </li>
+
+      <!--Section Divider-->
+      <hr class="sidebar-divider my-0">
+
+      <!--Nav item - Addons Collapse Menu-->
+
+      <!--Section Cabeçalho-->
+      <div class="sidebar-heading">
+        ADDONS
+      </div>
+
+      <!--Collapse Menu Pagina-->
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#"
+        data-toggle="collapse"
+        data-target="#collapsePage"
+        aria-expanded="true"
+        aria-controls="collapsePage">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Paginas</span>
+        </a>
+        <div id="collapsePage" 
+        class="collapse" 
+        aria-labelledby="headingPages"
+        data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">LOGIN SCREENS:</h6>
+            <a class="collapse-item" href="login.html">Login</a>
+            <a class="collapse-item" href="register.html">Registro</a>
+            <a class="collapse-item" href="forgot-password.html">Esqueci a Senha</a>
+            <h6 class="collapse-header">Outras páginas</h6>
+            <a class="collapse-item" href="404.html">404</a>
+            <a class="collapse-item" href="blank.html">Blank</a>
+            
+          </div>
+        </div>
+      </li>
+
+       <!--Nav item - gráficos Collapse Menu-->
+       <li class="nav-item active">
+        <a class="nav-link collapsed" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Gráficos</span>
+        </a>        
+      </li>
+
+      <!--Nav item - Tabelas Collapse Menu-->
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="tables.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Tabelas</span>
+        </a>
+      </li>
+
+      <!--Section Divider-->
+      <hr class="sidebar-divider  d-none d-md-block">
+
+      <!--Sidebar Toggler (Sidebar)-->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" 
+        id="sidebarToggle">
+        </button>
+      </div>
+
+    </ul>
+    <!--Side Bar End-->
+
+    <!--Content-Wrapper Start-->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!--Main Content-->
+      <div id="content">
+
+        <!--Topbbar-->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!--sidebar toggle (Topbar)-->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!--Top Searchbar -->
+          <form action="" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group" >
+              <input type="text" 
+              class="form-control bg-light border-0 small" 
+              placeholder="Search for . . ."
+              aria-label="Search"
+              aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-danger" type="button">
+                  <i class="fas fa-search fa-sm "></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!--Top NavBar-->
+          <ul class="navbar-nav ml-auto">
+            <!--Nav Item Search Dropdown (visibel only XSS)-->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" 
+                  id="searchDropdown" 
+                  href="#" 
+                  role="button" 
+                  data-toggle="dropdown" 
+                  aria-haspopup="true" 
+                  aria-expanded="false">
+                  <i class="fas fa-search fa-sm"></i>
+              </a>
+
+              <!--Dropdown Messages-->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline -mr-auto w-100 navbar-search" action="">
+                  <div class="input-group" >
+                    <input type="text" 
+                    class="form-control bg-light border-0 small" 
+                    placeholder="Search for . . ."
+                    aria-label="Search"
+                    aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-danger" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>              
+            </li>
+
+            <!--Nav item Alerts-->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="" id="alertsDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!--Counter Alerts-->
+                <span class="badge badge-danger badge-counter">+3</span>
+              </a>
+
+              <!--Dropdown Alerts-->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+
+                <h6 class="dropdown-header bg-danger border-0">CENTRAL DE ALERTAS</h6>
+
+                <!--Alert1-->
+                <a class="dropdown-item d-flex aling-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary ">
+                      <i class="fa fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="small text-gray-500">
+                      Outubro 07,2020
+                    </div>
+                    <span class="font-weight-bold"> Um novo relatório mensal está pronto para donload!</span>
+                  </div>
+                </a>
+
+                <!--Alert2-->
+                <a class="dropdown-item d-flex aling-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success ">
+                      <i class="fa fa-donate text-white"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="small text-gray-500">
+                      Outubro 07,2020
+                    </div>
+                    <span class="font-weight-bold"> 
+                      290.29R$ foi depositado em sua conta!
+                    </span>
+                  </div>
+                </a>
+
+                <!--Alert3-->
+                <a class="dropdown-item d-flex aling-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning ">
+                      <i class="fa fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="small text-gray-500">
+                      Outubro 07,2020
+                    </div>
+                    <span class="font-weight-bold"> Alerta de Gastos: notamos gastos excessivamente altos em sua conta.</span>
+                  </div>
+                </a>
+
+                <!--Alert Mostrar todos Alertas-->
+                <a class="dropdown-item text-center small text-gray-500" href="">Mostrar todos Alertas</a>
+              </div>
+            </li>
+
+            <!--Nav Item - Messages-->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="" id="messagesDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!--Counter Alerts-->
+                <span class="badge badge-danger badge-counter">+4</span>
+              </a>
+
+              <!--Dropdown - Messages-->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header bg-danger border-0">CENTRAL DE MENSAGENS</h6>
+                
+                <!--Message 1-->
+                <a class="dropdown-item d-flex align-items-center" href="">
+                  <div class="dropdown-list-image mr-3" href="">
+                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E60x60" alt="image">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate"> 
+                      Olá! Gostaria de saber se você pode me ajudar com um problema que estou tendo.</div>
+                    <div class="small text-gray-500">Emily Fowler  58m</div>
+                  </div>                  
+                </a>
+
+                <!--Message 2-->
+                <a class="dropdown-item d-flex align-items-center" href="">
+                  <div class="dropdown-list-image mr-3" href="">
+                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E60x60" alt="image">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate"> 
+                      Tenho as fotos que você encomendou no mês passado, como gostaria que fossem enviadas para você?</div>
+                    <div class="small text-gray-500">Jae Chun 1d</div>
+                  </div>                  
+                </a>
+
+                <!--Message 3-->
+                <a class="dropdown-item d-flex align-items-center" href="">
+                  <div class="dropdown-list-image mr-3" href="">
+                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="image">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate"> O relatório do mês passado parece ótimo, estou muito feliz com o progresso até agora, continue com o bom trabalho!</div>
+                    <div class="small text-gray-500">Morgan Alvarez 2d</div>
+                  </div>                  
+                </a>
+
+                <!--Message 4-->
+                <a class="dropdown-item d-flex align-items-center" href="">
+                  <div class="dropdown-list-image mr-3" href="">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="image">
+                    <div class="status-indicator bg-danger"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate"> Eu sou um bom menino? a razão de eu perguntar é porque
+                      alguém me disse que as pessoas dizem isso a todos os cães, mesmo que eles não sejam bons. . .</div>
+                    <div class="small text-gray-500">Chicken the Dog . 2w</div>
+                  </div>                  
+                </a>
+
+                <!--Alert Show all Message-->
+                <a class="dropdown-item text-center small text-gray-500" href="#">
+                  Ler mais Mensagens
+                </a>               
+              </div>            
+            </li>
+
+            <!--Section Divider-->
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!--Nav item - UserInformation -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" 
+              href="#" 
+              id="userDropdown" 
+              role="button"
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline textgray-600 small">Marcos Cruz</span>
+                <img class="img-profile rounded-circle" src="img/102880105_885564128614282_2984310801013395876_n.jpg" alt="image">
+              </a>
+
+              <!--Dropdown - UserinformationLogin-->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                  <!--Dropdown Menu - Perfil-->
+                <a class="dropdown-item" href="">
+                  <i class="fas fa-sm fa-fw fa-user mr-2 text-gray-400"></i>
+                  Perfil
+                </a>
+
+                <!--Dropdown Menu - Funções-->
+                <a class="dropdown-item" href="">
+                  <i class="fas fa-sm fa-fw fa-cog mr-2 text-gray-400"></i>
+                  Funções
+                </a>
+
+                <!--Dropdown Menu - Atividades-->
+                <a class="dropdown-item" href="">
+                  <i class="fas fa-sm fa-fw fa-list mr-2 text-gray-400"></i>
+                  Atividades
+                </a>
+
+                <div class="dropdown-divider"></div>
+
+                <!--Dropdown Menu - Logout-->
+                <a class="dropdown-item" href="" data-toggle="modal" data-target="#LogoutModal">
+                  <i class="fas fa-sm fa-fw fa-sign-out-alt mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+
+              </div> 
+            </li>
+            
+          </ul>
+
+        </nav><!--End Topbar--> 
+
+        <!--Page Card Start-->
+        <div class="container-fluid">
+          <!--PageHeading-->
+          <h1 class="h3 text-gray-800 mb-4">Cartões</h1>
+          
+          <!--Start Row Content-->
+          <div class="row">
+            <!--Earnings (Monthly) Card Exemple-->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase">Ganhos (Mensais)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">40.000,00R$</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class=" fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!--Earnings (Anual) Card Exemple-->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase">Ganhos (Anual)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">215.000,00R$</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class=" fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!--Task Card Exemple-->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase">Tarefas</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">50%</div>                          
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mx-3">
+                            <div class="progress-bar bg-info" 
+                            role="progressbar" 
+                            style="width:50%;" 
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class=" fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>                  
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!--Pending Requests Card Exemple-->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase">
+                        SOLICITAÇÕES PENDENTES</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class=" fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--End Row Content-->
+          
+          <!--Card Body Section Start-->
+          <div class="row">
+            <div class="col-lg-6">
+
+              <!--Default Card Example-->
+              <div class="card mb-4">
+                <div class="card-header">
+                  Default Card Example
+                </div>
+
+                <div class="card-body">
+                  <p>This card uses Bootstrap's default styling with no utility
+                    classes added.Global styles are the only things modifying
+                    the look and feel of this default card example.</p>
+                </div>                  
+              </div>
+
+              <!--Basic Card Example-->
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
+                </div>
+
+                <div class="card-body">
+                  <p>This styling for this basic card example is created by using 
+                  default Bootstrap utility classes. By using classes, the style of the
+                  card Component can be easily modified without need for any custom CSS!</p>
+                </div>                  
+              </div>  
+
+            </div>
+
+            <div class="col-lg-6">
+
+              <!--Dropdown Card Example-->
+              <div class="card mb-4">
+                <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Dropdown Card Example</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" 
+                    aria-labelledby="dropdownMenuLink class="dropdown-item"">
+                      <div class="dropdown-header">dropdown header:</div>
+                      <a class="dropdown-item" href="#">Ações</a>
+                      <a class="dropdown-item" href="#">Outras Ações</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Funções</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <p>Dropdown menus can be placed in the card header in order to
+                    extend the functionnality of a basic card. In this dropdown card
+                    example, the Font Awesome vertical ellipsis icon in the card header
+                    can be clicked on in order to toggle a dropdown menu
+                  </p>
+                </div>                  
+              </div>
+
+              <!--Collapseable Card Example-->
+              <div class="card shaodw mb-4">
+                
+                <a class="d-block card-header py-3" href="#collapseCardExample"
+                data-toggle="collapse" role="button" aria-expanded="true"
+                aria-controls="collapseCardExample">
+                  <h6 class="m-0 font-weight-bold text-primary">Collapseable Card Example</h6>
+                </a>
+
+                <div class="collapse show" id="collapseCardExample">
+                  <div class="card-body">
+                    <p>This is a collapsable card example using Bootstrap's built in
+                    collapse functionnality. Click on the card header to see the card body
+                    collapse and expandi
+                    </p>
+                  </div> 
+                </div>                 
+              </div>
+
+              
+
+            </div>
+          </div>
+          
+          <!--Caed Body Section End-->
+
+        </div> <!--Page Cards End-->    
+
+      </div>
+
+      <!--Footer Start-->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your WebSite 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End--> 
+
+    </div>
+    <!--Content-Wrapper End--> 
+
+  </div><!-- End Page Wrapper-->
+
+  <!--Scroll to TOP button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!--Logout Modal Section Start-->
+  <div class="modal fade" id="LogoutModal" tabindex="-1" 
+  role="dialog" 
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" 
+          type="button" 
+          data-dismiss="modal" 
+          aria-label="Close">
+          <span aria-hidden="true">
+            X
+          </span>
+          </button>          
+        </div>
+
+        <div class="modal-body">
+          Select "Logout" below if you are ready to end current session.
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div><!--Logout Modal Section End-->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
